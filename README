@@ -1,0 +1,15 @@
+## Multi Timer
+
+A simple iOS app written using RubyMotion that allows you to create sequences of timers.
+
+The first screen holds your timer sequences. Tap the + button to create a new one. Tap the new cell to edit.
+
+The second screen lets you add timers. Tapping the + button creates a new simultaneous timer. These will all be started at the same time. Tapping the 'chain' button on the timer cell adds a chained timer, this will be started when the previous timer finishes. You can delete timers by swiping (except the last timer, there must always be at least one timer). To set the time, tap the timer cell. Time is set in minutes and seconds (currently this lacks labels, I will try to add these at some point).
+
+Start the timer sequence with the 'play' button (bottom left corner). You can only have one sequence running at a time, if you return to the main screen while the timer is running it will stop (including reseting the timers - there is no support for pausing timers yet).
+
+Phone will vibrate to indicate a timer has finished. If you move the app in to the background, it uses local notifications to inform you that timers have finished (so you need to allow notifications - this is the only thing it uses notifications for). Note that if two timers finish at the same time you will only get one notification.
+
+The UI is very basic but functional. There are probably several issues but it is basically functionally complete.
+
+
